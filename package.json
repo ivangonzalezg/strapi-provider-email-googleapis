@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-email-googleapis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Googleapis provider for Strapi",
   "keywords": [
     "strapi",
@@ -13,15 +13,19 @@
     "token"
   ],
   "main": "index.js",
-  "repository": "https://github.com/ivangonzalezg/strapi-provider-email-googleapis.git",
-  "author": "Ivan Gonzalez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivangonzalezg/strapi-provider-email-googleapis.git"
+  },
+  "author": {
+    "name": "Ivan Gonzalez"
+  },
   "license": "MIT",
   "private": false,
   "dependencies": {
     "fs": "^0.0.1-security",
     "googleapis": "39",
-    "nodemailer": "^6.6.0",
-    "path": "^0.12.7"
+    "nodemailer": "^6.6.0"
   },
   "strapi": {
     "isProvider": true

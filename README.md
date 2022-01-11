@@ -1,6 +1,6 @@
 # strapi-provider-email-googleapis
 
-Email provider for [Strapi](https://github.com/strapi/strapi) based on [Gmail API](https://developers.google.com/gmail/api)
+Email provider for [Strapi v3](https://github.com/strapi/strapi) based on [Gmail API](https://developers.google.com/gmail/api)
 
 ## Installation
 

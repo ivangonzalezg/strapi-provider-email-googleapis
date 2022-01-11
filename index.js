@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 const { google } = require("googleapis");
 const MailComposer = require("nodemailer/lib/mail-composer");
 
