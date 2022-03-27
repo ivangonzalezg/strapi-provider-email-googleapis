@@ -17,8 +17,9 @@ async function createEmailAdminRaw(settings, options) {
     from: settings.defaultFrom,
     replyTo: settings.defaultReplyTo || settings.defaultFrom,
     textEncoding: "base64"
-  });
-  let encodedMessage = await mail.compile().build();
+  }).compile();
+  mail.keepBcc = true;
+  let encodedMessage = await mail.build();
   encodedMessage = await Buffer.from(encodedMessage)
     .toString("base64")
     .replace(/\+/g, "-")

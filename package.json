@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-email-googleapis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Googleapis provider for Strapi",
   "keywords": [
     "strapi",
@@ -25,7 +25,7 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "googleapis": "39",
-    "nodemailer": "^6.6.0"
+    "nodemailer": "^6.7.3"
   },
   "strapi": {
     "isProvider": true
