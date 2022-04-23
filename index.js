@@ -13,10 +13,10 @@ function getAuth(credentialsPath, tokenPath) {
 
 async function createEmailAdminRaw(settings, options) {
   const mail = new MailComposer({
-    ...options,
     from: settings.defaultFrom,
     replyTo: settings.defaultReplyTo || settings.defaultFrom,
-    textEncoding: "base64"
+    textEncoding: "base64",
+    ...options
   }).compile();
   mail.keepBcc = true;
   let encodedMessage = await mail.build();

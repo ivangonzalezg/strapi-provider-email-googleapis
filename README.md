@@ -1,15 +1,17 @@
 # strapi-provider-email-googleapis
 
-Email provider for [Strapi v3](https://github.com/strapi/strapi) based on [Gmail API](https://developers.google.com/gmail/api)
+Email provider for [Strapi v3](https://github.com/strapi/strapi) and [Strapi v4](https://github.com/strapi/strapi) based on [Gmail API](https://developers.google.com/gmail/api)
 
 ## Installation
 
 ```bash
-# using yarn
 yarn add strapi-provider-email-googleapis
+```
 
-# using npm
-npm install strapi-provider-email-googleapis --save
+For Strapi v4
+
+```bash
+yarn add @strapi/strapi-provider-email-googleapis@npm:strapi-provider-email-googleapis
 ```
 
 ## Setup
@@ -43,7 +45,7 @@ module.exports = ({ env }) => ({
     },
     settings: {
       defaultFrom: "mail@example.com",
-      defaultReplyTo: "mail@example.com>"
+      defaultReplyTo: "mail@example.com"
     }
   }
   // ...
