@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-email-googleapis",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Googleapis provider for Strapi",
   "keywords": [
     "strapi",

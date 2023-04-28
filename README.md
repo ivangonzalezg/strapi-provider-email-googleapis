@@ -11,7 +11,7 @@ yarn add strapi-provider-email-googleapis
 For Strapi v4
 
 ```bash
-yarn add @strapi/strapi-provider-email-googleapis@npm:strapi-provider-email-googleapis
+yarn add @strapi/provider-email-googleapis@npm:strapi-provider-email-googleapis
 ```
 
 ## Setup
@@ -35,19 +35,23 @@ yarn add @strapi/strapi-provider-email-googleapis@npm:strapi-provider-email-goog
 **Path -** `config/plugins.js`
 
 ```js
+const path = require("path");
+
 module.exports = ({ env }) => ({
   // ...
   email: {
-    provider: "googleapis",
-    providerOptions: {
-      credentialsPath: path.join(__dirname, "../credentials.json"),
-      tokenPath: path.join(__dirname, "../token.json")
+    config: {
+      provider: "googleapis",
+      providerOptions: {
+        credentialsPath: path.join(__dirname, "../credentials.json"),
+        tokenPath: path.join(__dirname, "../token.json"),
+      },
+      settings: {
+        defaultFrom: "mail@example.com",
+        defaultReplyTo: "mail@example.com",
+      },
     },
-    settings: {
-      defaultFrom: "mail@example.com",
-      defaultReplyTo: "mail@example.com"
-    }
-  }
+  },
   // ...
 });
 ```
